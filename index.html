@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RewardingGoodBehaviors (RGB)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 48px;
+        }
+        .logo {
+            font-size: 120px;
+            font-weight: bold;
+            background: -webkit-linear-gradient(45deg, red, green, blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #e74c3c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+        #development-message {
+            color: #e74c3c;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">RGB</div>
+        <h1>RewardingGoodBehaviors</h1>
+        <button onclick="showDevelopmentMessage()">Warning: Click Here</button>
+        <p id="development-message"></p>
+    </div>
+    <script>
+        function showDevelopmentMessage() {
+            document.getElementById("development-message").innerText = "This feature is still in development!";
+        }
+    </script>
+</body>
+</html>
